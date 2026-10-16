@@ -1,20 +1,16 @@
-# BrightSteps Class 3 — Android APK source
+# BrightSteps Classes 3–5 Expanded Source
 
-This package includes an improved, self-contained BrightSteps Class 3 learning home screen and wraps the supplied web preview in a Capacitor Android application. The new home screen includes Rajat's CBSE Class 3 learning flow, English/Hindi toggle, teach-then-practise lessons, interactive multiple-choice questions with explanations, local progress tracking, subject progress, and a daily question goal. It also includes a GitHub Actions workflow for a debug APK and a basic offline cache.
+Offline-first bilingual English/Hindi learning foundation for Classes 3, 4 and 5.
 
-## Build the APK on GitHub (phone-friendly)
+## Run as a website
+Serve this folder over HTTP (for example `npx serve .`) for service-worker offline caching. Opening `index.html` directly works for lessons, but service workers require a local server or HTTPS.
 
-1. Create a new **public or private** repository on GitHub.
-2. Upload the *contents* of this ZIP (the `package.json`, `www/`, `.github/`, etc.) to the repository root. Do not upload the ZIP as a single file.
-3. Open **Actions** and enable workflows if GitHub asks.
-4. Run **Build BrightSteps Android APK** from the Actions tab, or push a commit to `main`/`master`.
-5. Open the completed workflow run, scroll to **Artifacts**, and download `BrightSteps-Class3-debug-apk`.
-6. Extract the artifact ZIP and install `app-debug.apk` on your Android phone. Android may ask you to allow installs from your browser/file manager.
+## Files
+- `index.html`: app UI and interactions
+- `curriculum.js`: embedded original bilingual curriculum unit data
+- `manifest.webmanifest`: install metadata
+- `service-worker.js`: offline caching
+- `CURRICULUM-AND-IMPLEMENTATION.md`: curriculum plan, scope, limitations and next steps
 
-## Important notes
-
-- This is a **debug APK** intended for testing and personal installation, not a Play Store release.
-- The input was a static web preview export, not the original editable React Native source project. The APK packages that supplied web build; it does not magically restore missing backend services or original source code.
-- Offline support is best-effort: the app shell and core pages are cached after first load. Any feature that depends on a remote API, login provider, or remote media still needs that service and an internet connection.
-- Test lessons, quizzes, progress saving, and navigation on the device. If a feature in the original preview was only a mockup or relied on a missing backend, this wrapper cannot make that feature real by itself.
-- App ID: `com.brightsteps.class3`; display name: `BrightSteps Class 3`.
+## Android
+Capacitor config is included. Build with a compatible Node/Java/Android toolchain or use the repository GitHub Actions workflow. The package has not been deployed to Vercel and no APK is included in this source archive.

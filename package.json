@@ -1,11 +1,10 @@
 {
-  "name": "brightsteps-class3-android",
-  "version": "1.0.0",
+  "name": "brightsteps-classes-3-5",
+  "version": "2.0.0",
   "private": true,
-  "description": "BrightSteps Class 3 Android wrapper for the supplied Expo web export",
+  "description": "Offline-first bilingual CBSE-aligned learning app for Classes 3-5",
   "scripts": {
-    "build:android": "npx cap sync android",
-    "android:debug": "cd android && ./gradlew assembleDebug"
+    "start": "npx serve ."
   },
   "dependencies": {
     "@capacitor/android": "^7.4.3",

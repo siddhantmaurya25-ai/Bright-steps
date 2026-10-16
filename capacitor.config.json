@@ -1,11 +1,8 @@
 {
-  "appId": "com.brightsteps.class3",
-  "appName": "BrightSteps Class 3",
+  "appId": "in.brightsteps.learn",
+  "appName": "BrightSteps Classes 3-5",
   "webDir": "www",
   "server": {
     "androidScheme": "https"
-  },
-  "android": {
-    "allowMixedContent": false
   }
 }

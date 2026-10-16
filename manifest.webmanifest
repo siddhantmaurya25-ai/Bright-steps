@@ -1,10 +1,9 @@
 {
-  "name": "BrightSteps Class 3",
+  "name": "BrightSteps Classes 3–5",
   "short_name": "BrightSteps",
-  "description": "CBSE Class 3 learning app for Rajat",
-  "start_url": "/",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f7f8fc",
-  "theme_color": "#4776e6",
-  "orientation": "portrait"
+  "background_color": "#f3f6fb",
+  "theme_color": "#132a52",
+  "description": "Offline-first bilingual CBSE-aligned learning and exam practice for Classes 3–5."
 }
