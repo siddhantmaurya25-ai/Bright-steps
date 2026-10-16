@@ -1,0 +1,10 @@
+{
+  "name": "BrightSteps Class 3",
+  "short_name": "BrightSteps",
+  "description": "CBSE Class 3 learning app for Rajat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8fc",
+  "theme_color": "#4776e6",
+  "orientation": "portrait"
+}
