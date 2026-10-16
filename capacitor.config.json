@@ -1,0 +1,11 @@
+{
+  "appId": "com.brightsteps.class3",
+  "appName": "BrightSteps Class 3",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

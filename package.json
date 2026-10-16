@@ -1,0 +1,17 @@
+{
+  "name": "brightsteps-class3-android",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrightSteps Class 3 Android wrapper for the supplied Expo web export",
+  "scripts": {
+    "build:android": "npx cap sync android",
+    "android:debug": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
